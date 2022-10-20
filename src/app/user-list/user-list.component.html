@@ -1,0 +1,29 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>User Id</th> 
+            <th>User Password</th> 
+            <th>User Name</th>
+            <th>Contact Number</th>
+            <th>User Role</th>
+            <th>Email id</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.userid}}</td>
+            <td>{{user.userpassword}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.contactnumber}}</td>
+            <td>{{user.userrole}}</td>
+            <td>{{user.emailid}}</td>
+            <td>
+                <button (click)="updateUser(user.userid)" class="btn btn-info">
+                    Update
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+

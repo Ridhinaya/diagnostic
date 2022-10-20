@@ -1,0 +1,39 @@
+<div class="background">
+<img src="assets/logo.jpg">
+<h2 class="text-center">{{ title }}</h2>
+<p class="text-center">A transforming,Healing presence!!</p>
+
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a routerLink="users" routerLinkActive="active" 
+      class="nav-link">UserList </a>
+
+    </li>
+    <!--Create route a link to add new users-->
+    <li class="nav-item">
+
+      <a routerLink="create-user" routerLinkActive="active" 
+      class="nav-link">Add User </a>
+    </li>
+    
+  </ul>
+</nav>
+
+<mat-card>
+  <p> Walk-in clinics</p>
+  <p> Pharmaceutical companies and brands</p>
+  <p> Over-the-counter health-related products</p>
+  <p> Healthcare technology developers and manufacturers</p>
+</mat-card>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <span>All Rights Reserved 2050 @Healthcare private ltd</span>
+  </div>
+</footer>
+</div>

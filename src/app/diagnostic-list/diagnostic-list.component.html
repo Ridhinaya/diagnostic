@@ -1,0 +1,28 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Diagnostic Id</th> 
+            <th>Center Name</th> 
+            <th>List of Test</th>
+            <th>Contact Number</th>
+            <th>Appointment List</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let diagnostic of diagnostics">
+            <td>{{diagnostic.id}}</td>
+            <td>{{diagnostic.centername}}</td>
+            <td>{{diagnostic.listoftest}}</td>
+            <td>{{diagnostic.appoinmentlist}}</td>
+
+            <td>
+                <button (click)="updateDiagnostic(diagnostic.id)" class="btn btn-info">
+                    Update
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+

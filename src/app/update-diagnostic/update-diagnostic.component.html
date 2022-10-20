@@ -1,0 +1,38 @@
+<div class="col-md-6 offset-md-3">
+    <h3>Update Diagnostic</h3>
+    <form (ngSubmit)="onSubmit()">
+    
+        <!--Id input-->
+        <div class="form-group">
+            <label>Diagnostic id</label>
+            <input type="text" class="form-control" id="DiagnosticId"
+            [(ngModel)] = "diagnostic.id" name="diagnosticid">
+        </div>
+    
+        <!--Center name input-->
+        <div class="form-group">
+            <label>Center Name</label>
+            <input type="text" class="form-control" id="CenterName"
+            [(ngModel)] = "diagnostic.centername" name="centername">
+        </div>
+    
+        <!--List of testinput-->
+        <div class="form-group">
+            <label>List of test</label>
+            <input type="text" class="form-control" id="ListofTest"
+            [(ngModel)] = "diagnostic.listoftest" name="listoftest">
+        </div>
+
+        <!--Appointment list input-->
+        <div class="form-group">
+            <label>Appointment list</label>
+            <input type="text" class="form-control" id="AppointmentList"
+            [(ngModel)] = "diagnostic.appoinmentlist" name="appoinmentlist">
+        </div><br>
+    
+        <button class="btn btn-success" type="submit">Submit</button>
+    
+    </form>
+</div>
+
+
